@@ -1,3 +1,7 @@
 export default function Footer(){
-  return <h1>Footer</h1>
+  return (
+    <footer className=" py-3">
+       <p className="text-sm">Welcome to Basab's Tech News @2024</p> 
+    </footer>
+  )
 }
