@@ -10,3 +10,13 @@
 .hoverClass{
   @apply transition hover:scale-105
 }
+.primary_btn {
+  @apply bg-black text-white px-4 py-2 rounded-md font-bold shadow-md;
+
+  /* Set transition for background and text color */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.primary_btn:hover {
+  @apply bg-neo text-dark;
+}
