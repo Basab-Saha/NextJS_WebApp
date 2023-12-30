@@ -8,7 +8,7 @@ export default function CatagoriesList(){
             {
                 CatagoriesData.map((catagory)=>{
                     return (
-                        <Link className='bg-dark px-2 py-1 text-white rounded-md' href={`/catagories/${catagory.name}`}>
+                        <Link className='bg-dark px-2 py-1 hover:scale-105 transition font-bold text-white rounded-md' href={`/catagories/${catagory.name}`}>
                         <p key={catagory.id} >{catagory.name}</p>
                         </Link>
                     
