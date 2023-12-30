@@ -1,7 +1,7 @@
 export const CatagoriesData=[
     {
         id:"1",
-        name:"Technology",
+        name:"Technologgy",
     },
     {
         id:"2",
