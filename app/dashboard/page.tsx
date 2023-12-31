@@ -1,6 +1,23 @@
 import {posts} from '@/app/data'
 import PostCard from '../components/PostCard'
-export default function Post(){
+
+
+//Auth special imports
+import { getServerSession } from "next-auth/next"
+import {authOptions} from "../api/auth/[...nextauth]/route"
+import { redirect } from "next/navigation"
+//Auth Special imports
+
+
+export default async function Post(){
+
+    const session= await getServerSession(authOptions);
+
+    if(!session){
+      redirect('/sign-in')
+    }
+
+
     return(
         <div className='flex flex-col gap-3 mt-10'>   
         <h1 className='text-4xl font-extrabold text-dark'>My Posts</h1>

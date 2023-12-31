@@ -2,6 +2,8 @@ import NextAuth, { AuthOptions } from "next-auth";
 import GithubProvider from 'next-auth/providers/github'
 import GoogleProvider from 'next-auth/providers/google'
 
+// the most important part is : .env file should be in top level (same level as of public,pacakge.json)
+
 const authOptions:AuthOptions={
     providers:[
 
@@ -15,6 +17,9 @@ const authOptions:AuthOptions={
            
         }),
     ],
+    pages:{
+        signIn:'/sign-in'
+    },
     secret:process.env.NEXTAUTH_SECRET ,
 }
 
