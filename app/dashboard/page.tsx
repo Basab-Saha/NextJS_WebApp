@@ -22,7 +22,7 @@ export default function Post(){
                         will remain clean and modular
                         */
 
-                        <PostCard id={post.id} author={post.author} content={post.content} links={post.links} title={post.title} catagory={post.catagory} thumbnail={post.thumbnail} />
+                        <PostCard key={post.id} id={post.id} author={post.author} content={post.content} links={post.links} title={post.title} catagory={post.catagory} thumbnail={post.thumbnail} />
                     )
                 })
             }
